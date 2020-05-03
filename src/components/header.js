@@ -14,7 +14,8 @@ class Header extends Component {
         <div id='header-nav'>
           <ul id='nav-items'>
             <li className='nav-list-item'>HOME</li>
-            <li className='nav-list-item'>ABOUT</li>
+            <li className='nav-list-item'>GALLERY</li>
+            <li className='nav-list-item'>TESTIMONIALS</li>
             <li className='nav-list-item'>STORE INFO</li>
           </ul>
         </div>

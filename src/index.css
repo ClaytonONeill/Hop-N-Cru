@@ -28,7 +28,7 @@ code {
     background-repeat: no-repeat;
     width: 100%;
     height: 10em;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid brown;
   }
 
   #logo-image {
@@ -42,7 +42,7 @@ code {
   }
 
   #header-nav {
-    background: grey;
+    background: rgba(0, 0, 0, .1);
     margin-top: 0;
     padding: .5em 0 .5em 0;
   }
@@ -58,11 +58,13 @@ code {
     font-weight: bolder;
     list-style: none;
     transition: .2s ease-in-out;
+    font-size: .75em;
+    padding: 5px;
   }
 
   .nav-list-item:hover  {
       cursor: pointer;
-      background: white;
+      border: 1px solid gold;
   }
 
 
