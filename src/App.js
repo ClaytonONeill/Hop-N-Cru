@@ -8,6 +8,24 @@ class App extends Component {
     super(props);
   }
 
+  handleView = (view) =>  {
+    let pageTitle = '';
+
+    switch (view) {
+        case 'home' :
+          pageTitle = 'Home Page'
+          break
+        case 'itemSearch' :
+            pageTitle = 'Item Search'
+            break
+        case 'gallery' :
+            pageTitle = 'Photo Gallery'
+           break
+        default:
+           break
+      }
+  }
+
   render()  {
     return  (
       <React.Fragment>
