@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Item from './item.js'
+import Home from './home.js'
+import Gallery from './gallery.js'
 import axios from 'axios'
 
 
@@ -34,16 +36,23 @@ class Main extends Component {
     return(
       <React.Fragment>
         <div className='main-div-hold'>
-        {this.state.items.map((itemData)=>  (
-          <Item
-            key={itemData.id}
-            data={itemData}
-          />
-        ))}
+        {
+          this.props.view.page === 'home' ?
+          <Home />
+          : this.props.view.page === 'itemSearch' ?
 
+            this.state.items.map((itemData)=>  (
+            <Item
+              key={itemData.id}
+              data={itemData}
+            />
+          ))
+        : <Gallery />
+        }
         </div>
       </React.Fragment>
     )
+
   }
 }
 

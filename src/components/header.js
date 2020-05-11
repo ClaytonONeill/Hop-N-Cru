@@ -13,10 +13,9 @@ class Header extends Component {
         </div>
         <div id='header-nav'>
           <ul id='nav-items'>
-            <li className='nav-list-item'>HOME</li>
-            <li className='nav-list-item'>ITEM SEARCH</li>
-            <li className='nav-list-item'>GALLERY</li>
-            <li className='nav-list-item'>STORE INFO</li>
+            <li className='nav-list-item' onClick={() =>this.props.handleView('home')}>HOME</li>
+            <li className='nav-list-item' onClick={() => this.props.handleView('itemSearch')}>ITEM SEARCH</li>
+            <li className='nav-list-item' onClick={() => this.props.handleView('gallery')}>GALLERY</li>
           </ul>
         </div>
       </ React.Fragment>
