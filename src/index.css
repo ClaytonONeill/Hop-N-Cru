@@ -19,7 +19,7 @@ code {
 @media (max-width: 500px) {
 
   body  {
-    background: black;
+    background: white;
   }
 
 /* ====== HEADER STYLING ====== */
@@ -31,7 +31,7 @@ code {
     background-repeat: no-repeat;
     width: 100%;
     height: 10em;
-    border-bottom: 5px solid brown;
+    border-bottom: 5px solid maroon;
   }
 
   #logo-image {
@@ -50,6 +50,7 @@ code {
     background: rgb(255, 255, 255);
     margin-top: 0;
     padding: .5em 0 .5em 0;
+    border-bottom: 3px solid black;
   }
 
   #nav-items  {
@@ -72,52 +73,115 @@ code {
       color: brown;
   }
 
-/* ====== MAIN STYLING ====== */
+/* ====== HOME STYLING ====== */
 
-  .item-contain {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background: rgb(255, 255, 255);
-    border-radius: 5px;
-    margin: 1em;
-    padding: .5em;
-  }
+.home-contain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .item-info-contain  {
-    border: 1px solid white;
-    padding: .5em;
-    margin-left: 1em;
-  }
+.location-div {
+  width: 100%;
+  text-align: center;
+  background: rgba(128,0,0, 3);
+  border-bottom: 3px solid black;
+}
 
-  .item-info-contain  h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-  }
+.location-div h3 {
+  font-size: 1em;
+  color: white;
+  line-height: 1.5em;
+}
 
-  .item-image {
-    height: 7em;
-    width: 7em;
-    margin-top: 1em;
-  }
+.about-info-contain {
+  background: white;
+  width: 100%;
+  color: black;
+  padding-left: .5em;
+}
+
+.about-info-contain h2 {
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+.about-info-contain h4 {
+  line-height: 1.3em;
+  font-size: 1.5em;
+}
+
+.map-image-div  {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid green;
+  width: 100%;
+}
+
+.image-click-div {
+  border: 1px solid orange;
+  text-align: center;
+}
+
+.image-click-div h3 {
+  color: black;
+}
+
+#map-image {
+  height: 70%;
+  width: 50%;
+  margin-top: 5%;
+}
+
+/* ====== ITEM SEARCH STYLING ====== */
+
+.item-contain {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 1em;
+  padding: .5em;
+  box-shadow: -1px 1px 3px black;
+}
+
+.item-info-contain  {
+  border: 1px solid white;
+  padding: .5em;
+  margin-left: 1em;
+}
+
+.item-info-contain  h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.item-image {
+  height: 7em;
+  width: 7em;
+  margin-top: 1em;
+}
 
 
 
 /* ====== FOOTER STYLE ====== */
 
-  #footer-contain {
-    background: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-top: 5px solid brown;
-  }
+#footer-contain {
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 5px solid brown;
+}
 
-  .social-icon {
-    margin: 2em;
-  }
+.social-icon {
+  margin: 2em;
+}
 
 
 }

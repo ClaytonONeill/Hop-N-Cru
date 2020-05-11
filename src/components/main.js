@@ -22,10 +22,8 @@ class Main extends Component {
       this.setState({
         items: res.data
       })
-      console.log(this.state.items);
     }).catch(err => console.log(err))
   }
-
 
 
   componentDidMount() {
