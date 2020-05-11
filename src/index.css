@@ -11,3 +11,114 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ================
+    MOBILE STYLING
+ ================= */
+
+@media (max-width: 500px) {
+
+  body  {
+
+  }
+
+/* ====== HEADER STYLING ====== */
+
+  .header-main {
+    background-image: url('./assets/Hop-N-Cru-Header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10em;
+    border-bottom: 5px solid brown;
+  }
+
+  #logo-image {
+    height: 5em;
+    width: 5em;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    border: 3px solid white;
+    border-radius: 100%;
+  }
+
+/* NAV STYLING */
+
+  #header-nav {
+    background: rgba(0, 0, 0, .1);
+    margin-top: 0;
+    padding: .5em 0 .5em 0;
+  }
+
+  #nav-items  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+  }
+
+  .nav-list-item {
+    font-weight: bolder;
+    list-style: none;
+    transition: .2s ease-in-out;
+    font-size: .75em;
+    padding: 5px;
+  }
+
+  .nav-list-item:hover  {
+      cursor: pointer;
+      color: gold;
+  }
+
+/* ====== MAIN STYLING ====== */
+
+  .item-contain {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: lightgrey;
+    border-radius: 5px;
+    box-shadow: -1px 2px 5px black;
+    margin: 1em;
+    padding: .5em;
+  }
+
+  .item-info-contain  {
+    border: 1px solid white;
+    padding: .5em;
+    margin-left: 1em;
+  }
+
+  .item-info-contain  h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+
+  .item-image {
+    height: 7em;
+    width: 7em;
+    margin-top: 1em;
+  }
+
+
+
+/* ====== FOOTER STYLE ====== */
+
+  #footer-contain {
+    background: grey;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 5px solid brown;
+  }
+
+  .social-icon {
+    margin: 2em;
+  }
+
+
+}
